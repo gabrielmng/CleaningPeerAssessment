@@ -11,8 +11,8 @@
 #
 
 #Choose the UCI HAR Dataset directory
-# setwd(choose.dir())
-setwd("C:/Users/Helga/Documents/gabriel/cursos/UCI HAR Dataset")
+setwd(choose.dir())
+#setwd("C:/Users/Helga/Documents/gabriel/cursos/UCI HAR Dataset")
 readData <- function(sarquivo, pasta) {
   fpath <- file.path(pasta, paste0("y_", sarquivo, ".txt"))
   y_data <- read.table(fpath, header=F, col.names=c("ActivityID"))
